@@ -1,8 +1,8 @@
 <script>
 	import '../app.css';
 	// @ts-ignore
-	function scrollIntoView(event) {
-		const el = document.querySelector(event.getAttribute('href'));
+	function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
 		if (!el) return;
 		el.scrollIntoView({
 			behavior: 'smooth'
@@ -24,13 +24,15 @@
 				<span class="text-2xl pl-2"><i class="em em-grinning" /> Brand McBrandface</span>
 			</a>
 		</div>
-		<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
-			<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+		<div
+			class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end overflow-x-auto white-space: nowrap contents"
+		>
+			<ul class="list-reset flex justify-between flex-1 md:flex-none items-center" style="margin:0">
 				<li class="mr-3">
 					<a
 						class="inline-block py-2 px-4 text-white no-underline"
 						href="#section-1"
-						on:click|preventDefault={scrollIntoView}>About Me</a
+						on:click|preventDefault={scrollIntoView}>About</a
 					>
 				</li>
 				<li class="mr-3">

@@ -1,32 +1,66 @@
-<div class="container mx-auto h-screen pt-24 md:pt-16" id="section-1">
-	<div class="text-center px-3 lg:px-0 grid grid-rows-2 gap-4">
-		<div>
-			<h1 class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
-				Main Hero Message to sell yourself!
-			</h1>
-			<p class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8">
-				Sub-hero message, not too long and not too short. Make it just right!
-			</p>
-			<img class="inline-block h-96 w-96 rounded-full ring-2 ring-white" src="/iron_man.jpg" alt="kk" />
-			<p>slkajs;lkfjajijresigijiobdlk</p>
-			<p>slkajs;lkfjajijresigijiobdlk</p>
-			<p>slkajs;lkfjajijresigijiobdlk</p>
-			<p>slkajs;lkfjajijresigijiobdlk</p>
-			<p>slkajs;lkfjajijresigijiobdlk</p>
-			<p>slkajs;lkfjajijresigijiobdlk</p>
-		</div>
-		<div>
-			<button
-				class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-7 bg-slate-900 text-white hover:bg-slate-700 pointer-events-auto"
-				>more</button
-			>
-		</div>
-	</div>
+<script>
+	// @ts-ignore
+	function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		el.scrollIntoView({
+			behavior: 'smooth'
+		});
+	}
+</script>
 
-	<div class="flex items-center w-full mx-auto content-end">
-		<div class="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl" />
+<svelte:head>
+	<link rel="stylesheet" href="/theme/nicepage.css" media="screen" />
+	<link rel="stylesheet" href="/theme/Home.css" media="screen" />
+</svelte:head>
+<!-- <section>
+	<div class="container mx-auto h-screen pt-24 md:pt-16" id="section-1">
+		<div class="text-center px-3 lg:px-0 grid grid-rows-2 gap-4">
+			<div>
+				<h1 class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
+					Main Hero Message to sell yourself!
+				</h1>
+				<p class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8">
+					Sub-hero message, not too long and not too short. Make it just right!
+				</p>
+				<div style="background-color: pink; position: relative; height:400px">kkk</div>
+				<img class="inline-block h-96 w-96 rounded-full ring-2 ring-white" src="/iron_man.jpg" alt="kk" />
+				<p>slkajs;lkfjajijresigijiobdlk</p>
+				<p>slkajs;lkfjajijresigijiobdlk</p>
+				<p>slkajs;lkfjajijresigijiobdlk</p>
+				<p>slkajs;lkfjajijresigijiobdlk</p>
+				<p>slkajs;lkfjajijresigijiobdlk</p>
+				<p>slkajs;lkfjajijresigijiobdlk</p>
+			</div>
+			<div>
+				<button
+					href="#section-2"
+					on:click|preventDefault={scrollIntoView}
+					class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-7 bg-slate-900 text-white hover:bg-slate-700 pointer-events-auto"
+					>more</button
+				>
+			</div>
+		</div>
+
+		<div class="flex items-center w-full mx-auto content-end">
+			<div class="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl" />
+		</div>
 	</div>
-</div>
+</section> -->
+<section class="u-align-center u-clearfix u-section-1 pt-24 md:pt-14" id="section-1">
+	<div class="u-expanded-width u-palette-1-light-2 u-shape u-shape-rectangle u-shape-1" />
+	<div alt="" class="u-border-8 u-border-white u-image u-image-circle u-image-1" />
+	<h2 class="u-text u-text-1">Creative <b>Portfolio</b></h2>
+	<p class="u-text u-text-2">
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+		sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<a
+		href="https://nicepage.studio"
+		class="u-active-none u-border-2 u-border-black u-btn u-btn-rectangle u-button-style u-hover-none u-none u-btn-2"
+		>read more</a
+	>
+</section>
 
 <!-- <section class="bg-white border-b py-12" id="section-2">
 		<div class="container mx-auto flex flex-wrap items-center justify-between pb-12">
