@@ -1,29 +1,29 @@
 {
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // javascript formatting
-  "prettier.printWidth": 120,
-  "prettier.singleQuote": true,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  // python linting / formatting
-  // "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": ["--max-line-length=120"],
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length", "120"],
+	"editor.formatOnSave": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	// javascript formatting
+	"prettier.printWidth": 120,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": false,
+	// python linting / formatting
+	// "python.linting.flake8Enabled": true,
+	"python.linting.flake8Args": ["--max-line-length=120"],
+	"python.formatting.provider": "black",
+	"python.formatting.blackArgs": ["--line-length", "120"],
 
-  "python.analysis.extraPaths": ["backend"],
-  "python.pythonPath": "./backend/venv/bin/python3",
-  "files.exclude": {
-    "**/venv": true,
-    "**/node_modules": true,
-    "**/__pycache__": true
-  },
-  // "json.schemas": [
-  //   {
-  //     "$schema":"https://json.schemastore.org/jsconfig"
-  //   }
-  // ]
+	"python.analysis.extraPaths": ["backend"],
+	"python.pythonPath": "./backend/venv/bin/python3",
+	"files.exclude": {
+		"**/venv": true,
+		"**/node_modules": true,
+		"**/__pycache__": true
+	}
+	// "json.schemas": [
+	//   {
+	//     "$schema":"https://json.schemastore.org/jsconfig"
+	//   }
+	// ]
 }
